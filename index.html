@@ -139,7 +139,7 @@
                     <span class="icon">
                         <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code (comming soon)</span>
                     </a>
                 </span>
                 <!-- Dataset Link. -->
@@ -202,9 +202,27 @@
             For texture generation, we adopt the ID Consistent Texture Inpainting and Refinement which progressively expands the view for texture inpainting to obtain an initialization UV texture map. 
             We then use the id-aware guidance to provide image-level supervision for noisy multi-view images to obtain a refined texture map. Extensive experiments demonstrate that we can generate high-quality 3D heads with accurate geometry and texture from single in-the-wild portrait image.
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
         <div class="columns is-centered">
           <img src="./static/framework.png" class="interpolation-image" alt="Interpolate start reference image.">
         </div>
+        <div class="content has-text-justified">
+          <p>
+            Given a single in-the-wild portrait image, Portrait3D uses Identity-aware Head Guidance and Initialization to integrate identity information into the Geometry Sculpting stage. 
+            In the texture generation stage, ID Consistent Texture Inpainting and Refinement is applied to generate a high-quality head texture, where we first use the inpainting method to generate a rough texture and then use image-level ID-aware supervision for texture refinement. 
+            With these methods, we can generate high-quality 3D head models with consistent identities from a single in-the-wild face image.
+        </div>
       </div>
     </div>
   </div>
@@ -212,61 +230,67 @@
 
 
 
-<section class="section">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-full-width">
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
       <h2 class="title is-3">3D Head Generation from In-the-Wild Portrait Image</h2>
-      <p>
-        <!-- Text -->
-      </p>
-      <div id="results-carousel" class="carousel2 results-carousel">
-        <div class="item item-steve">
-          <video class="custom-video-size" poster="" id="steve" autoplay controls muted loop>
-            <source src="./static/visual_result.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
+    </div>
+    <div class="content has-text-justified">
+      Given a single in-the-wild portrait image, Portrait3D can generate identity-consistant 3D head. Our results exhibit high-quality geometry and photorealistic textures.
+    </div>
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/visual_result_new.mp4"
+                type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-3">Comparision with Baseline</h2>
-      <p>
-        <!-- Text -->
-      </p>
-      <div id="results-carousel" class="carousel2 results-carousel">
-        <div class="item item-steve">
-          <video class="custom-video-size" poster="" id="steve" autoplay controls muted loop>
-            <source src="./static/comparision.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Comparision</h2>
+    </div>
+    <div class="content has-text-justified">
+      Our method surpasses previous approaches in terms of the facial detail in head geometry, 3D consistency, and the realism of the texture.
+    </div>
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/comparision_new.mp4"
+                type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-3">Stylization Result</h2>
-      <p>
-        <!-- Text -->
-      </p>
-      <div id="results-carousel" class="carousel2 results-carousel">
-        <div class="item item-steve">
-          <video class="custom-video-size" poster="" id="steve" autoplay controls muted loop>
-            <source src="./static/stylization.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Application</h2>
+    </div>
+    <div class="content has-text-justified">
+      With the powerful capability of text-to-image diffusion models, using stylized stable diffusion versions, we can modify the text prompt during the texture generation stage to achieve stylized 3D head generation.
+    </div>
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/stylization_new.mp4"
+                type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
 
 
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      <!-- bibtex -->
+</code></pre>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
