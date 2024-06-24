@@ -10,6 +10,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portrait3D: 3D Head Generation from Single In-the-wild Portrait Image</title>
 
+  <style>
+    .custom-video-size {
+      width: 800px;
+      height: auto;
+    }
+    .responsive-video {
+      width: 800%;
+      height: auto;
+      max-width: 800px;
+    }
+  </style>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -103,7 +115,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2404.15789.pdf"
+                  <a href="https://jinkun-hao.github.io/Portrait3D/"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -112,7 +124,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2404.15789"
+                  <a href="https://jinkun-hao.github.io/Portrait3D/"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="ai ai-arxiv"></i>
@@ -122,7 +134,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/sjtuplayer/MotionMaster"
+                  <a href="https://jinkun-hao.github.io/Portrait3D/"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-github"></i>
@@ -209,7 +221,7 @@
       </p>
       <div id="results-carousel" class="carousel2 results-carousel">
         <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop width="90%">
+          <video class="custom-video-size" poster="" id="steve" autoplay controls muted loop>
             <source src="./static/visual_result.mp4" type="video/mp4">
           </video>
         </div>
@@ -227,7 +239,7 @@
       </p>
       <div id="results-carousel" class="carousel2 results-carousel">
         <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop width="90%">
+          <video class="custom-video-size" poster="" id="steve" autoplay controls muted loop>
             <source src="./static/comparision.mp4" type="video/mp4">
           </video>
         </div>
@@ -245,7 +257,7 @@
       </p>
       <div id="results-carousel" class="carousel2 results-carousel">
         <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop width="90%">
+          <video class="custom-video-size" poster="" id="steve" autoplay controls muted loop>
             <source src="./static/stylization.mp4" type="video/mp4">
           </video>
         </div>
